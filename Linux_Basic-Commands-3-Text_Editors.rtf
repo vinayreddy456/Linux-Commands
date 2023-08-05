@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red18\green124\blue155;\red170\green85\blue85;\red170\green51\blue170;\red56\green136\blue159;\red170\green64\blue64;\red85\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20 ==> merge.txt <==\cf1\highlight2 
+\par \cf0\highlight0 Vinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay textVinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay text[ec2-user@ip-172-31-3-45 ~]$ tail -n +1 merge.txt\cf1\highlight2 
+\par \cf0\highlight0 Vinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay textVinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay text[ec2-user@ip-172-31-3-45 ~]$ tail -n +2 merge.txt\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay textVinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay text[ec2-user@ip-172-31-3-45 ~]$ wc merge.txt\cf1\highlight2 
+\par \cf0\highlight0   2  25 148 merge.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ ls -l\cf1\highlight2 
+\par \cf0\highlight0 total 16\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 16:44 aws.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 17:15 copy.txt\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x 2 ec2-user ec2-user  34 Aug  5 16:47 \cf3 filess\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user 148 Aug  5 17:13 merge.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 17:12 vinay.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep 'Vinay' merge.txt\cf1\highlight2 
+\par \cf4\highlight0 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the vinay text\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep 'vinay' merge.txt\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  textVinay is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep -i 'vinay' merge.txt\cf1\highlight2 
+\par \cf4\highlight0 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf0\highlight0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep -i 'vinay' *\cf1\highlight2 
+\par \cf5\highlight0 aws.txt\cf6 :\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf5\highlight0 aws.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 copy.txt\cf6 :\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf5\highlight0 copy.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 grep: filess: Is a directory\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 vinay.txt\cf6 :\cf4 Vinay\cf0  is a hero\cf1\highlight2 
+\par \cf5\highlight0 vinay.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep -R 'vinay' *\cf1\highlight2 
+\par \cf5\highlight0 aws.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 copy.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  textVinay is a hero\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 vinay.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ grep -R 'vinay'\cf1\highlight2 
+\par \cf5\highlight0 aws.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 vinay.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  textVinay is a hero\cf1\highlight2 
+\par \cf5\highlight0 merge.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf5\highlight0 copy.txt\cf6 :\cf0 Warrior,Hard WorkerThe given data append in the \cf4 vinay\cf0  text\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ ^C\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ mv\cf1\highlight2 
+\par \cf0\highlight0 mv: missing file operand\cf1\highlight2 
+\par \cf0\highlight0 Try 'mv --help' for more information.\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ clear\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ ls -l\cf1\highlight2 
+\par \cf0\highlight0 total 16\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 16:44 aws.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 17:15 copy.txt\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x 2 ec2-user ec2-user  34 Aug  5 16:47 \cf3 filess\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user 148 Aug  5 17:13 merge.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  74 Aug  5 17:12 vinay.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 ~]$ cd filess/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ ls -l\cf1\highlight2 
+\par \cf0\highlight0 total 4\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user 21 Aug  5 16:53 f3.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  0 Aug  5 16:35 f4.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ vi f3.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ cat f3.txt\cf1\highlight2 
+\par \cf0\highlight0 Hello World\cf1\highlight2 
+\par \cf0\highlight0 Bye World\cf1\highlight2 
+\par \cf0\highlight0 Count World\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ vi f3.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ cat f3.txt\cf1\highlight2 
+\par \cf0\highlight0 Hello World\cf1\highlight2 
+\par \cf0\highlight0 Bye World\cf1\highlight2 
+\par \cf0\highlight0 Count World\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ sed 's/Hello/Bye' f3.txt\cf1\highlight2 
+\par \cf0\highlight0 sed: -e expression #1, char 11: unterminated `s' command\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ sed '$/Hello/Bye' f3.txt\cf1\highlight2 
+\par \cf0\highlight0 sed: -e expression #1, char 2: unknown command: `/'\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ sed '$/Hello/Bye/' f3.txt\cf1\highlight2 
+\par \cf0\highlight0 sed: -e expression #1, char 2: unknown command: `/'\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ ls -l\cf1\highlight2 
+\par \cf0\highlight0 total 4\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user 34 Aug  5 17:34 f3.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r-- 1 ec2-user ec2-user  0 Aug  5 16:35 f4.txt\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$ sed '$/jjj/Count/' f3.txt\cf1\highlight2 
+\par \cf0\highlight0 sed: -e expression #1, char 2: unknown command: `/'\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-3-45 filess]$\cf1\highlight2 
+\par \cf7\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf8\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf7\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <Return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \pard\cf0\highlight0\f1 
+\par }
+ 
